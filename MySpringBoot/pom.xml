@@ -26,6 +26,12 @@
 
   <dependencies>
   
+  		<!-- 引入web环境 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
         <!-- mq依赖，分析spring自动配置原理的时候加入的包 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,10 +52,10 @@
 			<optional>true</optional>
 		</dependency>
 		
-		<!-- 自己写的启动器，测试redis启动器 -->
+		<!-- 自己写的启动器，测试redis启动器,试图引入jar包后直接使用redis工具类，redis注解 -->
 		<dependency>
 		  <groupId>com.my.springboot</groupId>
-		  <artifactId>my-spring-boot-starter-redis</artifactId>
+		  <artifactId>my-spring-boot-starter-redis-copy</artifactId>
 		  <version>0.0.1-SNAPSHOT</version>
 		</dependency>
   </dependencies>
