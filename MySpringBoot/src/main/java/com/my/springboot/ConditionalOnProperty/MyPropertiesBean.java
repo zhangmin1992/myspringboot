@@ -2,9 +2,9 @@ package com.my.springboot.ConditionalOnProperty;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
+@ConditionalOnProperty(value="my.person.name", havingValue = "ww", matchIfMissing = true)
 @Component
 @ConfigurationProperties(prefix="my.person")
 public class MyPropertiesBean {
