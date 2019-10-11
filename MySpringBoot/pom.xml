@@ -53,11 +53,11 @@
 		</dependency>
 		
 		<!-- 自己写的启动器，测试redis启动器,试图引入jar包后直接使用redis工具类，redis注解 -->
-		<dependency>
+		<!-- <dependency>
 		  <groupId>com.my.springboot</groupId>
 		  <artifactId>my-spring-boot-starter-redis-copy</artifactId>
 		  <version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency> -->
   </dependencies>
   
     <!-- 这个插件，可以将应用打包成一个可执行的jar包；打包的时候记得有app.class主类-->
